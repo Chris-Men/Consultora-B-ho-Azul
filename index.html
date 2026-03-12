@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultora Búho Azul | Estrategia Empresarial</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="/_sdk/element_sdk.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="h-full bg-white text-gray-800">
+    <div id="app-wrapper" class="w-full h-full overflow-auto">
+      <!-- Navigation -->
+      <nav
+        id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      >
+        <div class="max-w-7xl mx-auto px-6 py-4">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+              <img
+                id="logo"
+                src="CBA.png"
+                alt="Logo CBA"
+                class="w-35 h-20 object-contain"
+              />
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="#inicio"
+                class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors"
+                >Inicio</a
+              >
+              <a
+                href="#nosotros"
+                class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors"
+                >Nosotros</a
+              >
+              <a
+                href="#servicios"
+                class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors"
+                >Servicios</a
+              >
+              <a
+                href="#proceso"
+                class="nav-link text-white/90 hover:text-white text-sm font-medium transition-colors"
+                >Proceso</a
+              >
+              <a
+                href="#contacto"
+                class="btn-primary px-6 py-2.5 rounded-full text-white text-sm font-semibold shadow-lg"
+                >Contactar</a
+              >
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <div
+              class="flex flex-col space-y-3 bg-white/10 backdrop-blur-lg rounded-2xl p-4"
+            >
+              <a
+                href="#inicio"
+                class="text-white py-2 px-4 rounded-lg hover:bg-white/10 transition-colors"
+                >Inicio</a
+              >
+              <a
+                href="#nosotros"
+                class="text-white py-2 px-4 rounded-lg hover:bg-white/10 transition-colors"
+                >Nosotros</a
+              >
+              <a
+                href="#servicios"
+                class="text-white py-2 px-4 rounded-lg hover:bg-white/10 transition-colors"
+                >Servicios</a
+              >
+              <a
+                href="#proceso"
+                class="text-white py-2 px-4 rounded-lg hover:bg-white/10 transition-colors"
+                >Proceso</a
+              >
+              <a
+                href="#contacto"
+                class="btn-primary text-center py-3 rounded-full text-white font-semibold"
+                >Contactar</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        id="inicio"
+        class="hero-bg min-h-screen flex items-center relative"
+      >
+        <div class="hero-pattern"></div>
+
+        <!-- Decorative Elements -->
+        <div
+          class="absolute top-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl floating-element"
+        ></div>
+        <div
+          class="absolute bottom-20 left-10 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-6 py-32 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="fade-in">
+              <div
+                class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8"
+              >
+                <span
+                  class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"
+                ></span>
+                <span class="text-blue-200 text-sm font-medium"
+                  >Consultoría Estratégica</span
+                >
+              </div>
+
+              <h1
+                id="hero-title"
+                class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+              >
+                Transformamos la complejidad en
+                <span class="gradient-text">soluciones claras</span>
+              </h1>
+
+              <p
+                id="hero-subtitle"
+                class="text-xl text-blue-100/80 mb-10 leading-relaxed max-w-xl"
+              >
+                Estrategia, confianza y resultados para el crecimiento
+                sostenible de tu empresa
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4">
+                <button
+                  id="hero-cta"
+                  class="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg shadow-xl flex items-center justify-center space-x-2"
+                >
+                  <span>Agenda tu asesoría</span>
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+                <a
+                  href="#nosotros"
+                  class="px-8 py-4 rounded-full text-white font-semibold text-lg border-2 border-white/30 hover:bg-white/10 transition-all flex items-center justify-center space-x-2"
+                >
+                  <span>Conoce más</span>
+                </a>
+              </div>
+
+              <!-- Stats -->
+              <div
+                class="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/10"
+              >
+                <div>
+                  <div class="text-3xl font-bold text-white">150+</div>
+                  <div class="text-blue-200/70 text-sm">
+                    Empresas asesoradas
+                  </div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-white">12</div>
+                  <div class="text-blue-200/70 text-sm">
+                    Años de experiencia
+                  </div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-white">98%</div>
+                  <div class="text-blue-200/70 text-sm">
+                    Clientes satisfechos
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hidden lg:block fade-in-right">
+              <div class="relative">
+                <!-- Main Card -->
+                <div
+                  class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl"
+                >
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+                    <div class="text-white/50 text-sm">Dashboard</div>
+                  </div>
+
+                  <!-- Chart Simulation -->
+                  <div class="space-y-4">
+                    <div class="flex items-end space-x-2 h-32">
+                      <div
+                        class="flex-1 bg-blue-500/30 rounded-t-lg"
+                        style="height: 40%"
+                      ></div>
+                      <div
+                        class="flex-1 bg-blue-500/40 rounded-t-lg"
+                        style="height: 55%"
+                      ></div>
+                      <div
+                        class="flex-1 bg-blue-500/50 rounded-t-lg"
+                        style="height: 45%"
+                      ></div>
+                      <div
+                        class="flex-1 bg-blue-500/60 rounded-t-lg"
+                        style="height: 70%"
+                      ></div>
+                      <div
+                        class="flex-1 bg-blue-500/70 rounded-t-lg"
+                        style="height: 85%"
+                      ></div>
+                      <div
+                        class="flex-1 bg-blue-400 rounded-t-lg"
+                        style="height: 100%"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between text-white/50 text-xs">
+                      <span>Ene</span><span>Feb</span><span>Mar</span
+                      ><span>Abr</span><span>May</span><span>Jun</span>
+                    </div>
+                  </div>
+
+                  <!-- Metrics -->
+                  <div class="grid grid-cols-2 gap-4 mt-6">
+                    <div class="bg-white/5 rounded-xl p-4">
+                      <div class="text-blue-300 text-sm mb-1">Crecimiento</div>
+                      <div class="text-white text-2xl font-bold">+34%</div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-4">
+                      <div class="text-blue-300 text-sm mb-1">Eficiencia</div>
+                      <div class="text-white text-2xl font-bold">+28%</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating Card -->
+                <div
+                  class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl pulse-glow"
+                >
+                  <div class="flex items-center space-x-3">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+                    >
+                      <svg
+                        class="w-5 h-5 text-green-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="text-gray-800 font-semibold text-sm">
+                        Meta alcanzada
+                      </div>
+                      <div class="text-gray-500 text-xs">
+                        Objetivo Q2 cumplido
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 scroll-indicator">
+          <div
+            class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2"
+          >
+            <div class="w-1 h-3 bg-white/50 rounded-full animate-pulse"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="nosotros" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="fade-in-left">
+              <div class="relative">
+                <!-- Main Image Placeholder -->
+                <div
+                  class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-3xl aspect-[4/3] flex items-center justify-center shadow-2xl overflow-hidden"
+                >
+                  <div class="text-center p-8">
+                    <svg
+                      class="w-24 h-24 mx-auto text-white/20 mb-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    <div class="text-white/60 font-medium">
+                      Equipo Profesional
+                    </div>
+                    <div class="text-white/40 text-sm mt-2">
+                      Expertos en consultoría empresarial
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Experience Badge -->
+                <div
+                  class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl"
+                >
+                  <div class="text-4xl font-bold text-blue-600">12+</div>
+                  <div class="text-gray-600 text-sm">
+                    Años de<br />experiencia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fade-in-right">
+              <div
+                class="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full mb-6"
+              >
+                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                <span class="text-blue-700 text-sm font-medium"
+                  >Quiénes Somos</span
+                >
+              </div>
+
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Tu aliado estratégico para el
+                <span class="text-blue-600">crecimiento empresarial</span>
+              </h2>
+
+              <p
+                id="about-text"
+                class="text-gray-600 text-lg leading-relaxed mb-8"
+              >
+                Somos Consultora Búho Azul, una firma de consultoría que
+                acompaña a micro, pequeñas y medianas empresas en la
+                optimización de sus procesos, la toma de decisiones estratégicas
+                y su transformación digital. Nuestra visión integral nos permite
+                ver más allá de lo evidente, identificando oportunidades donde
+                otros ven obstáculos.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">
+                      Enfoque personalizado
+                    </div>
+                    <div class="text-gray-500 text-sm">
+                      Soluciones únicas para cada cliente
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">
+                      Resultados medibles
+                    </div>
+                    <div class="text-gray-500 text-sm">
+                      Métricas claras de progreso
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#contacto"
+                class="inline-flex items-center space-x-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+              >
+                <span>Conoce nuestro equipo</span>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Value Proposition -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+            <div
+              class="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full mb-6"
+            >
+              <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span class="text-blue-700 text-sm font-medium"
+                >Propuesta de Valor</span
+              >
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              ¿Por qué elegir a <span class="text-blue-600">Búho Azul</span>?
+            </h2>
+            <p class="text-gray-600 text-lg">
+              Nuestra metodología única combina experiencia, tecnología y
+              compromiso para entregar resultados excepcionales
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-lg scale-in"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="icon-container w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Visión 360°</h3>
+              <p class="text-gray-600">
+                Análisis integral de tu negocio para identificar oportunidades y
+                áreas de mejora en todos los niveles.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-lg scale-in"
+              style="transition-delay: 0.2s"
+            >
+              <div
+                class="icon-container w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Soluciones Personalizadas
+              </h3>
+              <p class="text-gray-600">
+                Cada empresa es única. Diseñamos estrategias a medida que se
+                adaptan a tus necesidades específicas.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-lg scale-in"
+              style="transition-delay: 0.3s"
+            >
+              <div
+                class="icon-container w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Acompañamiento Continuo
+              </h3>
+              <p class="text-gray-600">
+                No te dejamos solo. Te guiamos en cada paso del proceso de
+                transformación empresarial.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="card-hover bg-white rounded-2xl p-8 border border-gray-100 shadow-lg scale-in"
+              style="transition-delay: 0.4s"
+            >
+              <div
+                class="icon-container w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Resultados Medibles
+              </h3>
+              <p class="text-gray-600">
+                Establecemos KPIs claros y monitoreamos el progreso para
+                garantizar el retorno de tu inversión.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section
+        id="servicios"
+        class="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden"
+      >
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 left-0 w-full h-full"
+            style="
+              background-image: radial-gradient(
+                circle at 25% 25%,
+                rgba(59, 130, 246, 0.3) 0%,
+                transparent 50%
+              );
+            "
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-full h-full"
+            style="
+              background-image: radial-gradient(
+                circle at 75% 75%,
+                rgba(59, 130, 246, 0.2) 0%,
+                transparent 50%
+              );
+            "
+          ></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+            <div
+              class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
+            >
+              <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+              <span class="text-blue-200 text-sm font-medium"
+                >Nuestros Servicios</span
+              >
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+              Soluciones integrales para tu empresa
+            </h2>
+            <p class="text-blue-100/70 text-lg">
+              Ofrecemos un portafolio completo de servicios diseñados para
+              impulsar el crecimiento y la eficiencia de tu negocio
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div
+              class="card-hover bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 group scale-in"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-400 group-hover:text-white transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">
+                Asesoría Estratégica
+              </h3>
+              <p class="text-blue-100/60">
+                Desarrollamos planes estratégicos que alinean tu visión con
+                acciones concretas para alcanzar tus objetivos de negocio.
+              </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+              class="card-hover bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 group scale-in"
+              style="transition-delay: 0.2s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-400 group-hover:text-white transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">
+                Auditorías y Diagnósticos
+              </h3>
+              <p class="text-blue-100/60">
+                Evaluación exhaustiva de procesos, finanzas y operaciones para
+                identificar fortalezas y oportunidades de mejora.
+              </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+              class="card-hover bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 group scale-in"
+              style="transition-delay: 0.3s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-400 group-hover:text-white transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">Capacitaciones</h3>
+              <p class="text-blue-100/60">
+                Programas de formación diseñados para potenciar las habilidades
+                de tu equipo y crear una cultura de mejora continua.
+              </p>
+            </div>
+
+            <!-- Service 4 -->
+            <div
+              class="card-hover bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 group scale-in"
+              style="transition-delay: 0.4s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-400 group-hover:text-white transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">
+                Desarrollo Tecnológico
+              </h3>
+              <p class="text-blue-100/60">
+                Implementamos soluciones digitales que automatizan procesos y
+                optimizan la gestión de tu empresa.
+              </p>
+            </div>
+
+            <!-- Service 5 -->
+            <div
+              class="card-hover bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 group scale-in"
+              style="transition-delay: 0.5s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-400 group-hover:text-white transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">
+                Optimización de Procesos
+              </h3>
+              <p class="text-blue-100/60">
+                Rediseñamos flujos de trabajo para eliminar ineficiencias y
+                maximizar la productividad de tu organización.
+              </p>
+            </div>
+
+            <!-- Service 6 -->
+            <div
+              class="card-hover bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 group scale-in"
+              style="transition-delay: 0.6s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-400 group-hover:text-white transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">
+                Seguimiento y Soporte
+              </h3>
+              <p class="text-blue-100/60">
+                Acompañamiento continuo post-implementación para asegurar el
+                éxito sostenido de las estrategias aplicadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section id="proceso" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+            <div
+              class="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full mb-6"
+            >
+              <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span class="text-blue-700 text-sm font-medium">Metodología</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Cómo <span class="text-blue-600">trabajamos</span>
+            </h2>
+            <p class="text-gray-600 text-lg">
+              Un proceso estructurado y probado que garantiza resultados
+              consistentes
+            </p>
+          </div>
+
+          <!-- Timeline Desktop -->
+          <div class="hidden lg:block">
+            <div class="flex justify-between items-start relative">
+              <!-- Connection Line -->
+              <div
+                class="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200"
+              ></div>
+
+              <!-- Step 1 -->
+              <div
+                class="relative flex flex-col items-center text-center flex-1 fade-in"
+                style="transition-delay: 0.1s"
+              >
+                <div
+                  class="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-xl z-10 mb-6"
+                >
+                  1
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Análisis</h3>
+                <p class="text-gray-600 text-sm max-w-xs">
+                  Recopilamos información detallada sobre tu empresa, mercado y
+                  objetivos
+                </p>
+              </div>
+
+              <!-- Step 2 -->
+              <div
+                class="relative flex flex-col items-center text-center flex-1 fade-in"
+                style="transition-delay: 0.2s"
+              >
+                <div
+                  class="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-xl z-10 mb-6"
+                >
+                  2
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Diagnóstico
+                </h3>
+                <p class="text-gray-600 text-sm max-w-xs">
+                  Identificamos fortalezas, debilidades y áreas de oportunidad
+                </p>
+              </div>
+
+              <!-- Step 3 -->
+              <div
+                class="relative flex flex-col items-center text-center flex-1 fade-in"
+                style="transition-delay: 0.3s"
+              >
+                <div
+                  class="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-xl z-10 mb-6"
+                >
+                  3
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Estrategia</h3>
+                <p class="text-gray-600 text-sm max-w-xs">
+                  Diseñamos un plan de acción personalizado con metas claras
+                </p>
+              </div>
+
+              <!-- Step 4 -->
+              <div
+                class="relative flex flex-col items-center text-center flex-1 fade-in"
+                style="transition-delay: 0.4s"
+              >
+                <div
+                  class="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-xl z-10 mb-6"
+                >
+                  4
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Implementación
+                </h3>
+                <p class="text-gray-600 text-sm max-w-xs">
+                  Ejecutamos las acciones con acompañamiento constante
+                </p>
+              </div>
+
+              <!-- Step 5 -->
+              <div
+                class="relative flex flex-col items-center text-center flex-1 fade-in"
+                style="transition-delay: 0.5s"
+              >
+                <div
+                  class="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-xl z-10 mb-6"
+                >
+                  5
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Seguimiento
+                </h3>
+                <p class="text-gray-600 text-sm max-w-xs">
+                  Monitoreamos resultados y ajustamos según sea necesario
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Mobile -->
+          <div class="lg:hidden space-y-8">
+            <div class="flex items-start space-x-4 fade-in">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0"
+              >
+                1
+              </div>
+              <div class="pt-2">
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Análisis</h3>
+                <p class="text-gray-600 text-sm">
+                  Recopilamos información detallada sobre tu empresa, mercado y
+                  objetivos
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 fade-in">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0"
+              >
+                2
+              </div>
+              <div class="pt-2">
+                <h3 class="text-lg font-bold text-gray-900 mb-1">
+                  Diagnóstico
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Identificamos fortalezas, debilidades y áreas de oportunidad
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 fade-in">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0"
+              >
+                3
+              </div>
+              <div class="pt-2">
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Estrategia</h3>
+                <p class="text-gray-600 text-sm">
+                  Diseñamos un plan de acción personalizado con metas claras
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 fade-in">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0"
+              >
+                4
+              </div>
+              <div class="pt-2">
+                <h3 class="text-lg font-bold text-gray-900 mb-1">
+                  Implementación
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Ejecutamos las acciones con acompañamiento constante
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 fade-in">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg flex-shrink-0"
+              >
+                5
+              </div>
+              <div class="pt-2">
+                <h3 class="text-lg font-bold text-gray-900 mb-1">
+                  Seguimiento
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Monitoreamos resultados y ajustamos según sea necesario
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients Section -->
+      <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="fade-in-left">
+              <div
+                class="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full mb-6"
+              >
+                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                <span class="text-blue-700 text-sm font-medium"
+                  >Nuestros Clientes</span
+                >
+              </div>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Especializados en <span class="text-blue-600">MIPYMES</span>
+              </h2>
+              <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                Trabajamos con micro, pequeñas y medianas empresas que buscan
+                dar el siguiente paso en su evolución. Entendemos sus desafíos
+                únicos y diseñamos soluciones que se adaptan a sus recursos y
+                ambiciones.
+              </p>
+
+              <div class="space-y-4">
+                <div
+                  class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm"
+                >
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">
+                      Negocios tradicionales
+                    </div>
+                    <div class="text-gray-500 text-sm">
+                      En búsqueda de modernización
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm"
+                >
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">
+                      Empresas en digitalización
+                    </div>
+                    <div class="text-gray-500 text-sm">
+                      Transformación tecnológica
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm"
+                >
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">
+                      Empresas en crecimiento
+                    </div>
+                    <div class="text-gray-500 text-sm">
+                      Escalando de forma sostenible
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fade-in-right">
+              <div class="grid grid-cols-2 gap-6">
+                <div
+                  class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover"
+                >
+                  <div class="text-4xl font-bold text-blue-600 mb-2">150+</div>
+                  <div class="text-gray-600">Empresas asesoradas</div>
+                </div>
+                <div
+                  class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover"
+                >
+                  <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
+                  <div class="text-gray-600">Proyectos exitosos</div>
+                </div>
+                <div
+                  class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover"
+                >
+                  <div class="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                  <div class="text-gray-600">Satisfacción</div>
+                </div>
+                <div
+                  class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover"
+                >
+                  <div class="text-4xl font-bold text-blue-600 mb-2">15</div>
+                  <div class="text-gray-600">Industrias</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+            <div
+              class="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full mb-6"
+            >
+              <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span class="text-blue-700 text-sm font-medium"
+                >Nuestros Valores</span
+              >
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Principios que nos <span class="text-blue-600">definen</span>
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl card-hover scale-in"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-gray-900">Claridad</div>
+            </div>
+
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl card-hover scale-in"
+              style="transition-delay: 0.15s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-gray-900">Inteligencia</div>
+            </div>
+
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl card-hover scale-in"
+              style="transition-delay: 0.2s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-gray-900">Confianza</div>
+            </div>
+
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl card-hover scale-in"
+              style="transition-delay: 0.25s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-gray-900">Innovación</div>
+            </div>
+
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl card-hover scale-in"
+              style="transition-delay: 0.3s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-gray-900">Compromiso</div>
+            </div>
+
+            <div
+              class="text-center p-6 bg-gray-50 rounded-2xl card-hover scale-in"
+              style="transition-delay: 0.35s"
+            >
+              <div
+                class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-7 h-7 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-gray-900">Transparencia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="py-24 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Mission -->
+            <div
+              class="bg-white rounded-3xl p-10 shadow-xl border border-blue-100 fade-in-left"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Nuestra Misión
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Brindar soluciones de consultoría integral que permitan a las
+                MIPYMES optimizar sus procesos, tomar decisiones estratégicas
+                informadas y alcanzar un crecimiento sostenible, actuando
+                siempre con transparencia, compromiso y excelencia profesional.
+              </p>
+            </div>
+
+            <!-- Vision -->
+            <div
+              class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-10 shadow-xl fade-in-right"
+            >
+              <div
+                class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-4">Nuestra Visión</h3>
+              <p class="text-blue-100 leading-relaxed">
+                Ser la consultora de referencia para las MIPYMES en México,
+                reconocida por nuestra capacidad de transformar empresas
+                mediante estrategias innovadoras, tecnología de vanguardia y un
+                enfoque humano que genera valor real y duradero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contacto"
+        class="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden"
+      >
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 left-0 w-full h-full"
+            style="
+              background-image: radial-gradient(
+                circle at 20% 80%,
+                rgba(59, 130, 246, 0.4) 0%,
+                transparent 50%
+              );
+            "
+          ></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+            <div
+              class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
+            >
+              <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+              <span class="text-blue-200 text-sm font-medium">Contacto</span>
+            </div>
+            <h2
+              id="contact-title"
+              class="text-3xl md:text-4xl font-bold text-white mb-4"
+            >
+              Iluminamos el <span class="text-blue-400">camino</span> de tu
+              empresa
+            </h2>
+            <p class="text-blue-100/70 text-lg">
+              Comienza tu transformación empresarial hoy. Estamos listos para
+              escucharte.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <!-- Contact Form -->
+            <div
+              class="bg-white/5 backdrop-blur-lg rounded-3xl p-8 md:p-10 border border-white/10 fade-in-left"
+            >
+              <form
+                id="contact-form"
+                action="https://formsubmit.co/buhoazul.consultora@gmail.com"
+                method="POST"
+                class="space-y-6"
+              >
+                <input type="hidden" name="_next" value="https://google.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      for="nombre"
+                      class="block text-white text-sm font-medium mb-2"
+                      >Nombre completo</label
+                    >
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Tu nombre"
+                      class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:border-blue-400 transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="empresa"
+                      class="block text-white text-sm font-medium mb-2"
+                      >Empresa</label
+                    >
+                    <input
+                      type="text"
+                      id="empresa"
+                      name="empresa"
+                      placeholder="Nombre de tu empresa"
+                      class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:border-blue-400 transition-colors"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="block text-white text-sm font-medium mb-2"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:border-blue-400 transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="mensaje"
+                    class="block text-white text-sm font-medium mb-2"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="Cuéntanos sobre tu proyecto o necesidad..."
+                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:border-blue-400 transition-colors resize-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full btn-primary py-4 rounded-xl text-white font-semibold text-lg flex items-center justify-center space-x-2"
+                >
+                  <span>Enviar mensaje</span>
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    />
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Success Message -->
+              <div id="success-message" class="hidden text-center py-8">
+                <div
+                  class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <svg
+                    class="w-8 h-8 text-green-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                  ¡Mensaje enviado!
+                </h3>
+                <p class="text-blue-100/70">
+                  Nos pondremos en contacto contigo pronto.
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-8 fade-in-right">
+              <div
+                class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold mb-1">
+                      Correo electrónico
+                    </div>
+                    <div class="text-blue-200">
+                      buhoazul.consultora@gmail.com
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold mb-1">
+                      WhatsApp Business
+                    </div>
+                    <div class="text-blue-200">+503 6208 - 2790</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10"
+              >
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-white font-semibold mb-1">Ubicación</div>
+                    <div class="text-blue-200">San Salvador, El Salvador</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+
+              <div class="redes-sociales">
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://wa.me/50362082790" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0"
+          >
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+              <img
+                id="logo"
+                src="CBA2.png"
+                alt="Logo CBA"
+                class="w-35 h-20 object-contain"
+              />
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-500 text-sm text-center font-bold">
+              © 2026 Consultora Búho Azul. Todos los derechos reservados.
+            </div>
+
+            <!-- Links -->
+            <div class="flex items-center space-x-6">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-white text-sm transition-colors font-bold"
+                >Privacidad</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-white text-sm transition-colors font-bold"
+                >Términos</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
